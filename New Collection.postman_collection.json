@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "f775cdf2-f974-4df4-b5fa-119b986195a0",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14147859"
+	},
+	"item": [
+		{
+			"name": "Motorcycle",
+			"item": [
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/motorcycles/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"motorcycles",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \r\n    \"name\": \"CB-500\",\r\n    \"engineCapacity\": 500\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/motorcycles/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"motorcycles",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"CB-500\",\r\n    \"engineCapacity\": 550\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/motorcycles/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"motorcycles",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delet",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/motorcycles/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"motorcycles",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
